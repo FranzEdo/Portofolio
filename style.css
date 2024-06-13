@@ -15,23 +15,49 @@ body {
 footer {
     background-color: #f8f9fa;
 }
+/* Styling untuk header */
 header.jumbotron {
-    background-image: url('gundam2.jpg'); /* Ganti dengan path gambar Anda */
-    background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh elemen */
-    background-position: center; /* Menempatkan gambar di tengah */
-    color: #ffffff; /* Mengubah warna teks menjadi putih agar kontras dengan gambar */
-    padding: 4rem 2rem; /* Menambahkan padding agar konten tidak terlalu dekat dengan tepi */
-    margin-bottom: 2rem; /* Memberikan jarak bawah */
-}
-@media (max-width: 768px) {
-    header.jumbotron {
-        padding: 2rem 1rem; /* Menyesuaikan padding untuk layar kecil */
-    }
-body {
     background-image: url('path/to/your/background-image.jpg'); /* Ganti dengan path gambar Anda */
-    background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh elemen */
-    background-position: center; /* Menempatkan gambar di tengah */
-    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
-    background-attachment: fixed; /* Membuat gambar tetap di tempat saat menggulir */
-    color: #ffffff; /* Mengubah warna teks menjadi putih agar kontras dengan gambar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff; /* Warna teks putih agar kontras dengan latar belakang */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Bayangan teks untuk meningkatkan kontras */
+    padding: 4rem 2rem; /* Padding untuk menyesuaikan jarak konten dengan tepi */
+    margin-bottom: 2rem; /* Margin bawah untuk memberikan ruang di bawah header */
+    position: relative; /* Memastikan posisi header relatif */
+}
+
+header.jumbotron h1.display-4 {
+    font-size: 3.5rem; /* Ukuran font untuk judul utama */
+    font-weight: bold; /* Ketebalan font */
+    animation: slideInDown 1s ease-out; /* Animasi masuk dari atas */
+}
+
+header.jumbotron p.lead {
+    font-size: 1.5rem; /* Ukuran font untuk paragraf lead */
+    animation: fadeIn 1.5s ease-out; /* Animasi muncul */
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 }

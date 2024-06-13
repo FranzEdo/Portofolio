@@ -27,3 +27,11 @@ header.jumbotron {
     header.jumbotron {
         padding: 2rem 1rem; /* Menyesuaikan padding untuk layar kecil */
     }
+body {
+    background-image: url('path/to/your/background-image.jpg'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh elemen */
+    background-position: center; /* Menempatkan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-attachment: fixed; /* Membuat gambar tetap di tempat saat menggulir */
+    color: #ffffff; /* Mengubah warna teks menjadi putih agar kontras dengan gambar */
+}

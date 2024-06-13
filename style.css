@@ -35,3 +35,33 @@ body {
     background-attachment: fixed; /* Membuat gambar tetap di tempat saat menggulir */
     color: #ffffff; /* Mengubah warna teks menjadi putih agar kontras dengan gambar */
 }
+header.jumbotron h1.display-4 {
+    font-size: 3.5rem; /* Ukuran font untuk judul utama */
+    font-weight: bold; /* Ketebalan font */
+    animation: slideInDown 1s ease-out; /* Animasi masuk dari atas */
+}
+
+header.jumbotron p.lead {
+    font-size: 1.5rem; /* Ukuran font untuk paragraf lead */
+    animation: fadeIn 1.5s ease-out; /* Animasi muncul */
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -37,3 +37,7 @@ header.jumbotron {
     padding: 4rem 2rem; /* Menambahkan padding agar konten tidak terlalu dekat dengan tepi */
     margin-bottom: 2rem; /* Memberikan jarak bawah */
 }
+@media (max-width: 768px) {
+    header.jumbotron {
+        padding: 2rem 1rem; /* Menyesuaikan padding untuk layar kecil */
+    }

@@ -16,7 +16,7 @@ footer {
     background-color: #f8f9fa;
 }
 header.jumbotron {
-    background-image: url('header-bg.jpg'); /* Ganti dengan path gambar Anda */
+    background-image: url('gundam2.jpg'); /* Ganti dengan path gambar Anda */
     background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh elemen */
     background-position: center; /* Menempatkan gambar di tengah */
     color: #ffffff; /* Mengubah warna teks menjadi putih agar kontras dengan gambar */
